@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  color: #2B2A27;
+  font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Meiryo", sans-serif;
+  line-height: 1.5em;
+}
+
+body {
+  margin: 0;
+}
+
+#main {
+  margin: 0 0 80px 0;
+  width: 100%;
+  display: flex;
+}
+
+img {
+  width: 50%;
+  height: 700px;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+
+/* 右のテキストグループ */
+#right {
+  width: 50%;
+  padding: 50px 50px;
+}
+
+h1 {
+  font-size: 1.75rem;
+  margin: 0 0 20px 0;
+  line-height: 1.5em;
+}
+
+#ingredients {
+  margin-bottom: 50px;
+}
+
+h2 {
+  font-size: 1.25rem;
+  margin: 0 0 30px 0;
+  border-bottom: solid 1px #CCC;
+}
+
+#right > p {
+  margin: 0 0 40px 0;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px #CCC;
+  margin-bottom: 10px;
+}
+
+dd {
+  margin-left: 0;
+}
+.list:last-child {
+  margin-bottom: 0px;
+}
+
+/* 作り方 */
+#process {
+  padding-left: 20px;
+}
+
+#process > li {
+  border-bottom: solid 1px #CCC;
+  margin-bottom: 10px;
+}
+#process > li:last-child {
+  margin-bottom: 0px;
+}
+
+/* ボタン */
+.button {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.button a {
+  display: inline-block;
+  padding: 20px 30px;
+  border: solid 1px #2B2A27;
+  color: #2B2A27;
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+/* フッター */
+footer {
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.sns {
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin: 0 auto 20px auto;
+}
+
+.sns li {
+  list-style: none;
+  margin: 0 20px;
+}
+.sns a {
+  color: #2B2A27;
+  font-size: 0.75rem;
+}
+
+footer p {
+  text-align: center;
+  margin: 0;
+  font-size: 0.75rem;
+}
+
+
+/* スマホ */
+@media screen and (max-width:767px) {
+  #main {
+    flex-direction: column;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  #right {
+    width: 100%;
+    padding: 50px 20px 80px 20px;
+  }
+}
