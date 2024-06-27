@@ -1,0 +1,163 @@
+*{
+  box-sizing: border-box;
+  }
+
+body {
+  margin: 0 auto;
+  max-width: 1000px;
+  background-color: #f4f9ff;
+  font-family: "Hiragino Kaku Gothic ProN",
+  "Hiragino Sans", "Noto Sans", Meiryo, sans-serif;
+}
+
+#index-gr, #detail, footer {
+  max-width: 700px;
+  margin:  0 auto;
+}
+
+h2 {
+  font-size: 20px;
+  margin: 0 0 10px 0;
+}
+p {
+  font-size: 14px;
+}
+
+li, table {
+  font-size: 14px;
+}
+
+header {
+  margin: 30px 0 20px 0;
+}
+
+header > a {
+  font-size: 24px;
+  color: black;
+  text-decoration: none;
+  line-height: 1px;
+}
+
+#main > img {
+  max-width: 100%;
+}
+
+/* INDEX */
+#index {
+  width: 100%;
+  background-color: white;
+  margin-top: 60px;
+  padding: 40px 0px;
+}
+/* ↑中のコンテンツ部分の最大幅は、HTMLにclassを設定してまとめると楽 */
+
+#index-gr {
+  line-height: 1.5em;
+  margin: 0 auto;
+}
+
+#index-gr > h2 {
+  /* padding-left: 20px; */
+}
+
+#index-gr > ol {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 20px;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+/* DETAIL */
+#detail {
+  margin-top: 60px;
+}
+
+#detail > div {
+  display: flex;
+  align-items: flex-start;
+}
+
+#detail-gr {
+  margin-left: 60px;
+  width: 50%;
+}
+
+#detail-gr > span {
+  font-weight: bold;
+  font-size: 18px;
+}
+#detail-gr > a {
+  font-size: 14px;
+  color: black;
+  text-decoration: none;
+  border-bottom: solid 1px black;
+  padding-bottom: 4px;
+}
+
+#detail-gr > table {
+  border-top: solid 1px gray;
+  border-bottom: solid 1px gray;
+  margin: 20px 0 20px 0;
+  padding: 10px 0;
+  width: 100%;
+}
+
+#detail img {
+  object-fit: cover;
+  width: 50%;
+}
+
+.detail-left {
+  padding: 0px 30px 0px 0;
+}
+
+footer {
+  margin-top: 60px;
+  padding-bottom: 40px;
+}
+
+footer > p {
+  font-size: 10px;
+}
+
+/* スマホ版 */
+@media screen and (max-width:767px){
+
+body {
+    margin: 0 auto;
+  }
+
+  header {
+    margin: 20px 10px;
+  }
+
+  #index-gr, #detail, footer {
+    margin:  0 auto;
+    padding: 0 40px;
+  }
+
+  #main img {
+    padding: 0 10px;
+  }
+
+  #index, #detail, footer {
+    margin-top: 50px;
+  }
+
+  #detail > div {
+    flex-direction: column;
+  }
+  #detail img {
+    width: 100%;
+  }
+  #detail-gr {
+    width: 100%;
+    margin: 60px 0 0 0;
+  }
+
+}
