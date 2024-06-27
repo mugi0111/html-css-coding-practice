@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  }
+
+html {
+  font-size: 14px;
+  color: #333;
+  font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans", Meiryo, sans-serif;
+}
+
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+header {
+  margin: 40px 0 10px 5px; 
+}
+
+
+/* メイン */
+#main > img {
+  max-width: 100%;
+  object-fit:cover;
+  margin-bottom: 60px;
+}
+
+/* INEDEX */
+#index, #detail {
+  max-width: 800px;
+  padding: 60px;
+  margin: 0 auto 80px auto;
+  background-color: #F5F5F5;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.3rem;
+  margin: 0 0 30px 0;
+}
+
+#index-list {
+  border: solid 1px #333;
+  padding: 40px 140px;
+  margin: 0;
+}
+#index-list > li {
+  margin-bottom: 20px;
+}
+#index-list > li:last-child {
+  margin-bottom: 0;
+}
+
+/* イメージ */
+#img {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#img > img {
+  margin: 10px;
+  width: 47%;
+}
+
+/* DETAIL */
+#detail-gr {
+  display: flex;
+  align-items: start;
+}
+#detail-left {
+  width: 30%;
+  margin: 0;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+  margin-bottom: 10px;
+}
+
+#detail-right {
+  width: 70%;
+  margin-left: 50px;
+  padding-left: 30px;
+  border-left: solid 1px #333;
+}
+#detail-right > p {
+  margin: 0;
+}
+
+#detail-right > a {
+  color: #333;
+  text-decoration: none;
+}
+#detail-right > a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  font-size: 10px;
+  padding-bottom: 20px;
+}
+footer > p {
+  margin: 0;
+}
+
+
+/* スマホ版 */
+@media screen and (max-width:767px) {
+  body {
+    margin: 0;
+  }
+
+  #main > img {
+    max-width: 100%;
+  }
+
+  #index, #detail {
+    margin: 0 20px 60px 20px;
+    padding: 40px 20px;
+  }
+
+  #index-list {
+    padding: 20px 40px;
+  }
+
+  #img > img {
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+  }
+
+  #detail-gr {
+    flex-direction: column;
+  }
+
+  #detail-right {
+    width: 100%;
+    height: auto;
+    margin: 40px 0 0 0;
+    padding: 40px 0 0 0;
+    border-top: solid 1px#333;
+    border-left: none;
+  }
+
+  #detail-left {
+    width: 100%;
+  }
+
+}
